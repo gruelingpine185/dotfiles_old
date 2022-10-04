@@ -26,6 +26,12 @@ return require('packer').startup(function(use)
         config = function() require('plugins.lualine') end
     }
 
+    -- telescope fuzzy finder
+    use {
+        'nvim-telescope/telescope.nvim', branch = '0.1.x',
+        requires = {'nvim-lua/plenary.nvim'}
+    }
+
     -- colorschemes
     use 'ellisonleao/gruvbox.nvim'
     use {
