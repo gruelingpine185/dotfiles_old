@@ -1,0 +1,7 @@
+# .config
+
+# Packer
+nvim/plugin/
+
+# OSX
+iterm2/
