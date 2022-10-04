@@ -26,6 +26,13 @@ return require('packer').startup(function(use)
         config = function() require('plugins.lualine') end
     }
 
+    -- colorschemes
+    use 'ellisonleao/gruvbox.nvim'
+    use {
+        'folke/tokyonight.nvim',
+        config = function() require('plugins.tokyonight') end
+    }
+
     if packer_bootstrap then
         require('packer').sync()
     end
