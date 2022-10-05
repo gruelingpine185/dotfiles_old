@@ -17,7 +17,7 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
     -- packer package manager
-    use {"wbthomason/packer.nvim", opt = true}
+    use {'wbthomason/packer.nvim', opt = true}
 
     -- latex syntax highlighting
     use 'lervag/vimtex'
