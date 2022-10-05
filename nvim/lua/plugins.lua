@@ -19,6 +19,9 @@ return require('packer').startup(function(use)
     -- packer package manager
     use {"wbthomason/packer.nvim", opt = true}
 
+    -- latex syntax highlighting
+    use 'lervag/vimtex'
+
     -- lualine status bar
     use {
         'nvim-lualine/lualine.nvim',
