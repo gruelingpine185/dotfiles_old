@@ -4,4 +4,5 @@
 nvim/plugin/
 
 # OSX
-iterm2/
+.DS_Store
+iterm2/AppSupport
