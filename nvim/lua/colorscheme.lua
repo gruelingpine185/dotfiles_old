@@ -10,3 +10,6 @@ vim.cmd [[
         endtry
     endtry
 ]]
+
+-- make neovim transparent
+vim.cmd('highlight Normal guibg=none')
