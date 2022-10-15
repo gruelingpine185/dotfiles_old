@@ -33,6 +33,9 @@ for k,v in pairs(globals) do
   vim.g[k] = v
 end
 
+
+keymap('', '<ESC>', ':nohls<CR>', opts)
+
 -- Zatuhra
 keymap('n', '<leader>v', ':VimtexView<CR>', opts)
 
