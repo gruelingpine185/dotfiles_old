@@ -3,3 +3,4 @@ layouts:
 
 window-margins: true
 window-margin-size: 10
+screen-padding-top: 35
