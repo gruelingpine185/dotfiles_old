@@ -41,8 +41,8 @@ keymap('n', '<S-l>', ':bNext<CR>', opts)
 keymap('n', '<S-h>', ':bprevious<CR>', opts)
 
 -- move text
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
+keymap("n", "<M-UP>", ":m-2<CR>==", opts)
+keymap("n", "<M-DOWN>", ":m+1<CR>==", opts)
 
 vim.cmd('syntax on')
 vim.cmd('filetype plugin indent on')
