@@ -13,10 +13,10 @@ do
                               icon.padding_right=16                         \
                               label.padding_right=20                        \
                               icon.highlight_color=$RED                     \
-                              background.padding_left=-8                    \
-                              background.padding_right=-8                   \
+                              background.padding_left=-4                    \
+                              background.padding_right=-4                   \
                               background.height=20                          \
-                              background.corner_radius=4                    \
+                              background.corner_radius=6                    \
                               background.color=$SPACE_BACKGROUND            \
                               background.drawing=on                         \
                               label.font="sketchybar-app-font:Regular:16.0" \
@@ -26,14 +26,15 @@ do
                               label.background.corner_radius=9              \
                               label.drawing=off                             \
                               script=""                                     \
+                              mach_helper="$HELPER"                         \
                               click_script="$SPACE_CLICK_SCRIPT"
 done
 
 sketchybar   --add item       separator left                          \
              --set separator  icon=                                  \
-                              icon.font="Hack Nerd Font:Regular:14.0" \
+                              icon.font="Hack Nerd Font:Regular:16.0" \
                               background.padding_left=16              \
-                              background.padding_right=16             \
+                              background.padding_right=15             \
                               label.drawing=off                       \
                               associated_display=active               \
                               icon.color=$WHITE

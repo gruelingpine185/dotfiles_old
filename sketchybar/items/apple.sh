@@ -9,7 +9,7 @@ sketchybar --add item           apple.logo left                             \
                                 icon.font="$FONT:Black:16.0"                \
                                 icon.color=$GREEN                           \
                                 background.padding_left=-8                  \
-                                background.padding_right=16                 \
+                                background.padding_right=25                 \
                                 label.drawing=off                           \
                                 click_script="$POPUP_CLICK_SCRIPT"          \
                                                                             \
@@ -18,8 +18,15 @@ sketchybar --add item           apple.logo left                             \
                                 label="Preferences"                         \
                                 click_script="open -a 'System Preferences';
                                               $POPUP_OFF"                   \
+                                                                            \
+           --add item           apple.activity popup.apple.logo             \
+           --set apple.activity icon=$ACTIVITY                              \
+                                label="Activity"                            \
+                                click_script="open -a 'Activity Monitor';
+                                              $POPUP_OFF"\
+                                                                            \
            --add item           apple.lock popup.apple.logo                 \
            --set apple.lock     icon=$LOCK                                  \
-                                label="Sleep"                               \
+                                label="Lock Screen"                         \
                                 click_script="pmset displaysleepnow;
                                               $POPUP_OFF"
