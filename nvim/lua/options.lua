@@ -36,6 +36,12 @@ end
 
 keymap('', '<ESC>', ':nohls<CR>', opts)
 
+-- LSP
+keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
+keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
+keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
+
 -- Zatuhra
 keymap('n', '<leader>v', ':VimtexView<CR>', opts)
 

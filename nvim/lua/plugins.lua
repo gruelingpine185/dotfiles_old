@@ -19,6 +19,12 @@ return require('packer').startup(function(use)
     -- packer package manager
     use {'wbthomason/packer.nvim', opt = true}
 
+    -- lsp
+    use {
+        'neovim/nvim-lspconfig',
+        config = function () require('plugins.lsp_config') end
+    }
+
     -- latex syntax highlighting
     use 'lervag/vimtex'
 
