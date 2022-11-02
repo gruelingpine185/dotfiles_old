@@ -1,3 +1,8 @@
 require('plugins')
-require('colorscheme')
 require('options')
+
+
+vim.cmd('colorscheme tokyonight')
+
+-- make neovim transparent
+vim.cmd('highlight Normal guibg=none')

@@ -64,7 +64,6 @@ return require('packer').startup(function(use)
     }
 
     -- colorschemes
-    use 'ellisonleao/gruvbox.nvim'
     use {
         'folke/tokyonight.nvim',
         config = function() require('plugins.tokyonight') end
