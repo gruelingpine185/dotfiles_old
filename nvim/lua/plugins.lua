@@ -69,6 +69,10 @@ return require('packer').startup(function(use)
         config = function() require('plugins.tokyonight') end
     }
 
+    use {
+        'ellisonleao/gruvbox.nvim',
+        config = function() require('plugins.gruvbox') end
+    }
     if packer_bootstrap then
         require('packer').sync()
     end
