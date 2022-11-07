@@ -43,6 +43,9 @@ return require('packer').startup(function(use)
     -- latex syntax highlighting
     use 'lervag/vimtex'
 
+    -- glsl syntax highlighting
+    use 'tikhomirov/vim-glsl'
+
     -- lualine status bar
     use {
         'nvim-lualine/lualine.nvim',

@@ -55,3 +55,8 @@ keymap("n", "<M-DOWN>", ":m+1<CR>==", opts)
 
 vim.cmd('syntax on')
 vim.cmd('filetype plugin indent on')
+
+
+
+
+vim.api.nvim_exec([[ au BufNewFile,BufReadPost   *.shader,*.frag,*.vert,*.fp,*.vp,*.glsl   setf glsl ]], false)
