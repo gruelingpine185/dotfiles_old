@@ -1,3 +1,6 @@
+local telescope_builtin = require('telescope.builtin')
+
+
 local opts = {noremap = true, silent = true}
 local term_opts = {silent = true}
 local keymap = vim.api.nvim_set_keymap
@@ -35,6 +38,12 @@ end
 
 
 keymap('', '<ESC>', ':nohls<CR>', opts)
+
+
+-- Telescope
+vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, {})
 
 -- LSP
 keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
