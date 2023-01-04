@@ -31,14 +31,21 @@ return require('packer').startup(function(use)
         'windwp/nvim-autopairs',
         config = function() require('nvim-autopairs').setup {} end
     }
-    
+
+    -- file structure
+    use 'liuchengxu/vista.vim'
+
     -- snippets
     use 'L3MON4D3/LuaSnip' --snippet engine
+
     -- lsp
     use {
         'neovim/nvim-lspconfig',
         config = function () require('plugins.lsp_config') end
     }
+
+    -- c/c++ syntax highlighting
+    use 'bfrg/vim-cpp-modern'
 
     -- latex syntax highlighting
     use 'lervag/vimtex'
