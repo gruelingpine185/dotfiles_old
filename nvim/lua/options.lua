@@ -40,6 +40,12 @@ end
 keymap('', '<ESC>', ':nohls<CR>', opts)
 
 
+
+-- Vista
+keymap('n', '<leader>ft', '<cmd>Vista nvim_lsp<CR>', opts)
+keymap('n', '<leader>t', '<cmd>Vista!!<CR>', opts)
+keymap('n', '<leader><S-t>', '<cmd>Vista!<CR>', opts)
+
 -- Telescope
 vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, {})
