@@ -1,6 +1,7 @@
 require('plugins')
 require('options')
-
+require("luasnip.loaders.from_snipmate")
+    .lazy_load({paths = "~/.config/nvim/snippets"})
 
 vim.cmd('colorscheme gruvbox')
 

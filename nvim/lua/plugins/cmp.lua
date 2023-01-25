@@ -113,6 +113,15 @@ cmp.setup {
     { name = "buffer" },
     { name = "path" },
   },
+  snippet = {
+    expand = function(args)
+      local luasnip = prequire("luasnip")
+        if not luasnip then
+          return
+        end
+      luasnip.lsp_expand(args.body)
+    end
+  },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,

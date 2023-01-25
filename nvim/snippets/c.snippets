@@ -1,0 +1,54 @@
+# main function
+snippet main
+	int main(int _argc, char** _argv) {
+		${0}
+		return 0;
+	}
+
+# #include <...>
+snippet Inc
+	#include <${1}>
+	${0}
+
+# #include "..."
+snippet inc
+	#include "${1}"
+	${0}
+
+# header guards
+snippet guard
+	#ifndef ${1}
+	#define $1
+
+
+	${0}
+
+	#endif // $1
+
+# #if ... endif // ...
+snippet ife
+	#if ${1}
+		#define ${0}
+	#endif // $1
+
+snippet nocpp
+	#ifdef __cplusplus
+		extern "C" {
+	#endif // __cplusplus
+
+	${0}
+
+	#ifdef __cplusplus
+		}
+	#endif // __cplusplus
+
+snippet td
+	typedef ${1} ${2}
+
+snippet ts
+	typedef struct ${1} $1
+
+snippet tsi
+	typedef struct {
+		${0}
+	} ${1};
