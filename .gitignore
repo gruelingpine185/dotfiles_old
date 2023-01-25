@@ -3,6 +3,15 @@
 # Packer
 nvim/plugin/
 
+
+# Spicetify
+spicetify/config-xpui.ini
+*.log
+spicetify/Backup/
+spicetify/CustomApps/
+spicetify/Extensions/
+spicetify/Extracted/
+
 # OSX
 .DS_Store
 iterm2/AppSupport
