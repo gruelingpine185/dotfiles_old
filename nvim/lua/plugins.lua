@@ -65,6 +65,10 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', branch = '0.1.x',
         requires = {'nvim-lua/plenary.nvim'}
     }
+    use {
+        'nvim-telescope/telescope-file-browser.nvim',
+        config = function() require('plugins.telescope_file_browser') end
+    }
 
     use {
         'goolord/alpha-nvim',

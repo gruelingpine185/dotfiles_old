@@ -1,5 +1,5 @@
-local telescope_builtin = require('telescope.builtin')
-
+local ts_builtin = require('telescope.builtin')
+local ts_file_browser = require('telescope').extensions.file_browser
 
 local opts = {noremap = true, silent = true}
 local term_opts = {silent = true}
@@ -40,6 +40,8 @@ end
 keymap('', '<ESC>', ':nohls<CR>', opts)
 
 
+-- Luasnip
+
 
 -- Vista
 keymap('n', '<leader>ft', '<cmd>Vista nvim_lsp<CR>', opts)
@@ -47,9 +49,10 @@ keymap('n', '<leader>t', '<cmd>Vista!!<CR>', opts)
 keymap('n', '<leader><S-t>', '<cmd>Vista!<CR>', opts)
 
 -- Telescope
-vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, {})
+vim.keymap.set('n', '<leader>ff', ts_builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', ts_builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', ts_builtin.buffers, {})
+vim.keymap.set('n', '<leader>fe', ts_file_browser.file_browser, {})
 
 -- LSP
 keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
