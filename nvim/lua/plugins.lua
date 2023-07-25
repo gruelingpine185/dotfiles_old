@@ -68,6 +68,13 @@ return require('packer').startup(function(use)
         config = function() require('plugins.lualine') end
     }
 
+    -- terminal
+    use {
+        'akinsho/toggleterm.nvim',
+        tag = '*',
+        config = function () require('plugins.toggleterm') end
+    }
+
     -- telescope fuzzy finder
     use {
         'nvim-telescope/telescope.nvim', branch = '0.1.x',
@@ -75,7 +82,7 @@ return require('packer').startup(function(use)
     }
     use {
         'nvim-telescope/telescope-file-browser.nvim',
-        config = function() require('plugins.telescope_file_browser') end
+        config = function () require('plugins.telescope_file_browser') end
     }
 
     use {

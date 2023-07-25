@@ -67,6 +67,15 @@ keymap('n', '<leader>v', ':VimtexView<CR>', opts)
 keymap('n', '<S-l>', ':bNext<CR>', opts)
 keymap('n', '<S-h>', ':bprevious<CR>', opts)
 
+-- terminal
+vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
+vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
+vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
+vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
+vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts)
+
 -- move text
 keymap("n", "<M-UP>", ":m-2<CR>==", opts)
 keymap("n", "<M-DOWN>", ":m+1<CR>==", opts)
