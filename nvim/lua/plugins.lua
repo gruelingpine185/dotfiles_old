@@ -102,6 +102,12 @@ return require('packer').startup(function(use)
         'ellisonleao/gruvbox.nvim',
         config = function() require('plugins.gruvbox') end
     }
+
+    use {
+        'rose-pine/neovim',
+        config = function() require('plugins.rose-pine') end
+    }
+
     if packer_bootstrap then
         require('packer').sync()
     end
