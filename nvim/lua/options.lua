@@ -24,7 +24,13 @@ local options = {
 
 local globals = {
   mapleader = ';',
-  vimtex_view_method = 'zathura'
+  tex_flavor='latex',
+  Tex_DefaultTargetFormat='pdf',
+  vimtex_view_method = 'zathura',
+  vimtex_view_general_viewer='zathura',
+  vimtex_view_enabled=1,
+  vimtex_view_automatic=1
+
 }
 
 
@@ -62,6 +68,7 @@ keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 
 -- Zatuhra
 keymap('n', '<leader>v', ':VimtexView<CR>', opts)
+keymap('n', '<leader>l', ':VimtexCompile<CR>', opts)
 
 -- buffers
 keymap('n', '<S-l>', ':bNext<CR>', opts)
