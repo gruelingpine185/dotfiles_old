@@ -1,0 +1,33 @@
+# Structure
+
+snippet bd "Create begin/end document"
+	\begin{document}
+		${0}
+	\end{document}
+
+snippet beg "Create begin/end environment"
+	\begin{${1:env}}
+		${0}
+	\end{${1:env}}
+
+snippet dc "Create documentclass"
+	\documentclass[${2:options}]{${1:type}}
+
+	${0}
+
+snippet dca "Create documentclass article"
+	\documentclass[
+		letterpaper,
+		twoside,
+		12pt
+	]{article}
+
+	${0}
+
+# Includes
+
+snippet use "Use package"
+	\usepackagep{${1:package}}${0}
+
+snippet Use "Use package with options"
+	\usepackagep[${2:options}]{${1:package}}${0}
