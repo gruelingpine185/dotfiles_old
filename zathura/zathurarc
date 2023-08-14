@@ -9,6 +9,8 @@ set scroll-page-aware "true"
 set scroll-full-overlap 0.01
 set scroll-step 1
 
+# allow copy/[aste to clopboard]
+set selection-clipboard clipboard
 #zoom settings
 set zoom-min 10
 set guioptions ""
