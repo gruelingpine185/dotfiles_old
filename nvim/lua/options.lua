@@ -46,7 +46,9 @@ end
 keymap('', '<ESC>', ':nohls<CR>', opts)
 
 
--- Luasnip
+-- Markdown Preview
+keymap('n', '<leader>mo', '<cmd>MarkdownPreview<CR>', opts)
+keymap('n', '<leader>mc', '<cmd>MarkdownPreviewStop<CR>', opts)
 
 
 -- Vista
